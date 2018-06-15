@@ -8,6 +8,9 @@
          $(document).ready(function(){
              $(".button").click(function(){
                  $("#div1").fadeIn(4000);
+                 $("#div2").fadeIn(6500);
+                 $("#div3").fadeIn(8000);
+                 $("#div4").fadeIn(11000);
              });
          });
       </script>
@@ -15,7 +18,7 @@
       <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
       <style>
-         body {
+         .main {
          font-family: 'Allan';font-size: 22px;
          position: absolute;
          margin: auto;
@@ -23,7 +26,7 @@
          text-align: center;
          top: 0; left: 0; bottom: 0; right: 0;
          width: 100%;
-         display: table;
+         <!-- display: table; -->
          }
          .button {
          border: 2px solid #0a3c59;
@@ -75,14 +78,26 @@
       </style>
    </head>
    <body style="background-image:url(http://cypressintegration.com/wp-content/uploads/Bright-Blue1.jpg)">
+      <div class="main">
+      <br><br>
       <font size="6">
          <h1>Tom O'Donnell</h1>
       </font>
       <small><a href='#' class='button'>About me</a></small>
       <div id="div1" style="display:none;">
-         <p>Web Design, App Design, iOS Jailbreak Tweaks</p>
-         <p>Batch/Bash Scripting</p>
-         <p>Plays with Custom Firmwares/Legacy iOS Devices. iOS 6 FTW</p>
+      <br>
+      <h6>
+      Web Design, App Design, iOS Jailbreak Tweaks</p>
+      <div>
+         <div id="div2" style="display:none;">
+            <p>Batch/Bash Scripting</p>
+         </div>
+         <div id="div3" style="display:none;">
+            <p>Plays with Custom Firmwares/Legacy iOS Devices</p>
+         </div>
+         <div id="div4" style="display:none;">
+            <p> iOS 6 FTW</p>
+         </div>
       </div>
    </body>
 </html>
